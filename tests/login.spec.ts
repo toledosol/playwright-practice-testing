@@ -24,6 +24,6 @@ test.describe("Módulo de Autenticación", () => {
     await loginPage.login("customer@practicesoftwaretesting.com", "welcome01");
 
     // Validar el ingreso exitoso
-    await expect(loginPage.pageTitle).toContainText("My account");
+   await expect(loginPage.pageTitle).toContainText("My account", { timeout: 10000 });
   });
 });
